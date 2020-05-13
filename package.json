@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Basic styles and scripts for bunny/drupack.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "stylelint '**/*.scss' --fix "
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wieni/drubase.git"
@@ -26,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/wieni/drubase/issues"
   },
-  "homepage": "https://github.com/wieni/drubase#readme"
+  "homepage": "https://github.com/wieni/drubase#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-drupack": "github:wieni/stylelint-config-drupack"
+  }
 }
