@@ -1,0 +1,30 @@
+{
+  "name": "drubase",
+  "version": "1.0.0",
+  "description": "Basic styles and scripts for bunny/drupack.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wieni/drubase.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "javascript",
+    "wieni",
+    "wm"
+  ],
+  "author": "Sander Tirez (http://github.com/sqndr)",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Sander Tirez",
+      "url": "http://github.com/sqndr"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/wieni/drubase/issues"
+  },
+  "homepage": "https://github.com/wieni/drubase#readme"
+}
