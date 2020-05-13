@@ -4,4 +4,26 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+
+  background-color: $d-login-background-color;
+  background-image: $d-login-background-image;
+
+  &__box {
+    padding: 4rem;
+    background-color: #ffffff;
+
+    border-radius: 0.5rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+
+    .logo {
+      width: 60%;
+    }
+  }
 }
