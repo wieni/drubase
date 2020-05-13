@@ -1,0 +1,14 @@
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-weight: $d-form-label-weight;
+
+  &.is-required {
+    &::after {
+      content: "*";
+      margin-left: 3px;
+      color: $d-form-required-asterix-color;
+    }
+  }
+}

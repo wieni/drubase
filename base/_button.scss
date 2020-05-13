@@ -1,0 +1,15 @@
+button {
+  font-size: inherit;
+  color: currentColor;
+  text-decoration: none;
+  user-select: none;
+  border-color: transparent;
+
+  &:not(:disabled) {
+    appearance: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
