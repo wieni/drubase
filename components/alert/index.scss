@@ -1,3 +1,26 @@
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 .alert {
   display: flex;
   width: 100%;
@@ -9,8 +32,10 @@
   }
 
   &.is-error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
+    color: $d-error-color;
+    background-color: $d-error-background;
+    border-color: $d-error-border-color;
+
+    animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   }
 }
