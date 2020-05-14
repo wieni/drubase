@@ -1,0 +1,19 @@
+@mixin breakpoint($breakpoint-name, $type: "min-width") {
+  @if map-has-key($breakpoints, $breakpoint-name) {
+    $breakpoint: map-get($breakpoints, $breakpoint-name);
+
+    @if ($type == "max-width") {
+      @media (max-width: #{$breakpoint - 1}px) {
+        @content;
+      }
+    } @else if ($type == "min-width") {
+      @media (min-width: #{$breakpoint}px) {
+        @content;
+      }
+    } @else {
+      @error "🤦🏻‍♂️ Use 'min-width' or 'max-width, not #{$type}.";
+    }
+  } @else {
+    @error "🤦🏻‍♂️ No breakpoint #{$breakpoint-name} found.";
+  }
+}
