@@ -6,6 +6,7 @@ const buttons = document.querySelectorAll('[data-toggle="dropdown"]');
   button.addEventListener("click", () => {
     const menu = button.parentNode.querySelector(".dropdown-menu");
     menu.classList.toggle("show");
+    button.classList.toggle("is-open");
     // eslint-disable-next-line no-unused-vars
     const pop = new Popper(button, menu, {
       placement: "bottom-start",
@@ -14,7 +15,8 @@ const buttons = document.querySelectorAll('[data-toggle="dropdown"]');
     const clickOff = (evt) => {
       if (!button.contains(evt.target)) {
         document.removeEventListener("click", clickOff);
-        menu.classList.toggle("show");
+        menu.classList.remove("show");
+        button.classList.remove("is-open");
       }
     };
 
